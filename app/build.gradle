@@ -280,6 +280,7 @@ sonarqube {
 
 /**
  * Returns the number of the current build in Travis.
+ * Posible conflicto causará esta línea.
  */
 private static Integer getBuildNumber() {
     return System.getenv()["TRAVIS_BUILD_NUMBER"] as Integer ?: 1
