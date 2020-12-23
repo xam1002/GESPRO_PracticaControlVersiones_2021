@@ -312,6 +312,7 @@ private String generateVersionName() {
 
 /**
  * Returns git commit long hash.
+ * Esta línea puede causar conflicto.
  */
 private String getCommitHash() {
     return 'git rev-parse HEAD'.execute([], project.rootDir).text.trim();
